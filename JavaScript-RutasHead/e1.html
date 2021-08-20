@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	 <Title>Aplicación</title>
+    <meta charset="utf-8">
+    <meta name="author" content="carlos blanco">
+    <meta name="description" content="curso de html5 y css3">
+    <meta name="keywords" content="código html5 etiquetas">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<p>Cambio de contenido html y de estilo css:</p>
+
+<button type="button" onclick="myFunction()">Pulsa aquí</button>
+
+<p id="demo">Este texto cambiará.</p>
+
+<script>
+function myFunction() { 
+     document.getElementById("demo").innerHTML = "Hello JavaScript!";
+     document.getElementById("demo").style.fontSize = "25px"; 
+     document.getElementById("demo").style.color = "red";
+     document.getElementById("demo").style.backgroundColor = "yellow";        
+}
+
+
+</script>
+<noscript>
+Sorry, your browser does not support JavaScript!
+</noscript>
+
+
+</body>
+</html>

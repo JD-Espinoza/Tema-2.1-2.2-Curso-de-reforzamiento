@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <Title>Aplicación</title>
+    <meta charset="utf-8">
+    <meta name="author" content="carlos blanco">
+    <meta name="description" content="curso de html5 y css3">
+    <meta name="keywords" content="código html5 etiquetas">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+
+}
+
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+<!--Ejemplo de float en el layout-->
+<div class="container">
+
+<header>
+   <h1>Diseño página</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Cursos</a></li>
+    <li><a href="#">Práticas</a></li>
+  </ul>
+</nav>
+
+<article>
+ 
+  <h1>Layout</h1>
+  <p>Los sitios web suelen mostrar contenido en varias columnas (como una revista o un periódico).
+HTML5 ofrece nuevos elementos semánticos que definen las diferentes partes de una página web:
+.</p>
+  
+</article>
+
+<footer>Copyright &copy; codigodata.com</footer>
+
+</div>
+
+</body>
+</html>

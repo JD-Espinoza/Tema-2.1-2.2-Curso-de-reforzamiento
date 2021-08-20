@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <Title>Aplicación</title>
+    <meta charset="utf-8">
+    <meta name="author" content="carlos blanco">
+    <meta name="description" content="curso de html5 y css3">
+    <meta name="keywords" content="código html5 etiquetas">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link href="bootstrap/css/bootstrap.min.css" rel="styleheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>    
+<body>
+    <!-- <script src="js/jquery-1.11.3.min.js"></script>
+     <script src="bootstrap/js/bootstrap.min.js"></script>-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+
+     <h1>Tienda online <small>Elige el producto</small></h1>
+     <h3>elige la opción</h3>
+     <div class="container">
+      <form method="post" action="formulario4html.php">
+        <div class="form-group">
+          <button name="coche" class="form-control btn btn-default" id="identificador" placeholder="identificación de cliente" value="1" disabled="true">Coche valor 1</button>
+        </div>
+            <div class="form-group">
+                <button  name="enbarcacion" class="form-control btn btn-default" id="identificador" placeholder="identificación de cliente" value="2" disabled="true">Enbarcación valor 2</button>
+            </div>
+            <div class="form-group">
+                <button name="aire" class="form-control btn btn-default" id="identificador" placeholder="identificación de cliente" value="3" disabled="true">Aire valor 3</button>
+            </div>
+            <div class="form-group">
+                <button name="alojamiento" class="form-control btn btn-default" id="identificador" placeholder="identificación de cliente" value="Alojamiento" disabled="true">Alojamiento valor 4</button>
+            </div>
+            <div class="form-group">
+                <button type="text" name="concierge" class="form-control btn btn-default" id="identificador" placeholder="identificación de cliente" value="Concierge" disabled="true">Concierge valor 5</button>
+            </div>
+            <div class="form-group">
+                <button type="text" name="actividad" class="form-control btn btn-default" id="identificador" placeholder="identificación de cliente" value="Actividad" disabled="true">Actividad valor 6</button>
+            </div>
+             <div class="form-group">
+                <button type="text" name="Restaurante" class="form-control btn btn-default" id="identificador" placeholder="identificación de cliente" value="Restaurante" disabled="true">Restaurante valor 7</button>
+            </div>
+
+             <div class="form-group">
+                <input type="number" name="categoria" class="form-control btn btn-default" id="identificador" placeholder="introduce el valor del producto entre 1 - 7" value="Actividad">
+            </div>
+
+        <button type="submit" class="btn btn-default">enviar</button>
+      </form>
+
+     </div>
+
+</body>
+</html>     

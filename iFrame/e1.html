@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	 <Title>Aplicación CMS</title>
+    <meta charset="utf-8">
+    <meta name="author" content="carlos blanco">
+    <meta name="description" content="curso de html5 y css3">
+    <meta name="keywords" content="código html5 etiquetas">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+       h3{
+       	color: orange;
+       	background-color: blue;
+       }
+       a{
+       	text-decoration: none;
+        font-size: 30px;
+        border-radius: 20px;
+        color: orange;
+       	background-color: blue;
+       	
+       }
+
+    </style>
+</head>
+<body>
+	
+	<h1>Ejemplos Iframe</h1>
+	<!-- iframe por defecto -->
+	<h3>iframe por defecto</h3>
+	<iframe src="../13listas/e7.html"></iframe>
+	<!--Manipulando la altura y anchura-->
+	<h3>Manipulando la altura y anchura</h3>
+	<iframe src="../13listas/e7.html" width="200" height="400"></iframe>
+	<!--Eliminando el borde-->
+	<h3>Eliminando el borde</h3>
+	<iframe src="../13listas/e7.html" style="border:none;"></iframe>
+	<!--Poner un estilo al borde-->
+	<h3>Poner un estilo al borde</h3>
+	<iframe src="../13listas/e7.html" style="border: 4px solid green;"></iframe>
+    <!--Marco de destino a un enlace-->
+    <h3>Marco de destino a un enlace</h3>
+    <iframe src="../13listas/e7.html" name="iframe"></iframe>
+    <p><a href="http://www.codigodata.com" target="iframe">codigodata</a></p>
+
+</body>
+</html>	
