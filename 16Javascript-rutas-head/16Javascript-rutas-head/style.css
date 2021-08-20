@@ -1,0 +1,10 @@
+p{
+	background: red;
+	color: white;
+}
+button{
+	background: blue;
+	color: white;
+	width: 150px;
+	height: 100px;
+}
