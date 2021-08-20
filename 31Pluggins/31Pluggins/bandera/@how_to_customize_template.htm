@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>How to customize this template</title>
+<style type="text/css">
+<!--
+body {font-family: Verdana, Arial, Helvetica, sans-serif;font-size:11px}
+.Style1 {color: #FF0000}
+.Style3 {color: #339966}
+.Style5 {color: #FF0000; font-weight: bold; }
+.Style6 {color: #000000}
+-->
+</style>
+</head>
+
+<body>
+<p><u> How to customize dynamic flash header ? </u><br />
+You can add as many images and slogans you want, but too many images will slowdown your flash header download.  
+Open and edit custom.xml file. Replace red values by yours. Becarfull to <span class="Style5">not </span>add &quot;#&quot; before colors. </p>
+<p>&lt;?xml version='1.0' encoding='UTF-8' ?&gt;<br />
+  &lt;header_vars&gt;<br />
+  <span class="Style3">&lt;!-- music controler (music note) color --&gt; </span><br />
+  &lt;graphics_color&gt;<span class="Style1">FFFFFF</span>&lt;/graphics_color&gt;<br />
+&lt;animation_loop&gt;<span class="Style1">no</span>&lt;/animation_loop&gt;<br />
+<span class="Style3">&lt;!-- transition time (in seconds) between two animation screens --&gt;</span><br />
+&lt;transition_time_seconds&gt;5&lt;/transition_time_seconds&gt;</p>
+<p>&lt;header&gt;<br />
+  &lt;text_header_h1 x_pos=&quot;<span class="Style1">5</span>&quot; y_pos=&quot;<span class="Style1">55</span>&quot; size=&quot;<span class="Style1">19</span>&quot; letter_spacing=&quot;<span class="Style1">0</span>&quot; text_color=&quot;<span class="Style1">FFFFFF</span>&quot;&gt;<span class="Style1">YOUR WAY TO SUCCESS</span>&lt;/text_header_h1&gt;<br />
+  &lt;text_header_h2 x_pos=&quot;<span class="Style1">10</span>&quot; y_pos=&quot;<span class="Style1">80</span>&quot; size=&quot;<span class="Style1">10</span>&quot; letter_spacing=&quot;<span class="Style1">1.9</span>&quot; text_color=&quot;<span class="Style1">FFFFFF</span>&quot;&gt;<span class="Style1">YOUR OWN SLOGANS AND IMAGES</span>&lt;/text_header_h2&gt; <br />
+  &lt;image&gt;<span class="Style1">images/flashimages/your_image2.jpg</span>&lt;/image&gt;<br />
+  &lt;/header&gt; <br />
+  &lt;header&gt;<br />
+  .....<br />
+  &lt;/header&gt; <br />
+  &lt;header&gt;<br />
+  ....<br />
+&lt;/header&gt; </p>
+<p><span class="Style3">&lt;!--<br />
+</span><span class="Style3">change to play_music=&quot;<span class="Style1">no</span>&quot; if you don't want to add music to your header <br />
+change to music_contro=&quot;<span class="Style1">no</span>&quot; if you don't want to display music controler. If you have music_file loop=&quot;<span class="Style1">no</span>&quot; you MUST have  music_control=&quot;no&quot;</span><br />
+  <span class="Style3">--&gt; </span><br />
+&lt;music_file loop=&quot;<span class="Style1">no</span>&quot; music_control=&quot;<span class="Style1">no</span>&quot; play_music=&quot;<span class="Style1">yes</span>&quot;&gt;<span class="Style1">sounds/music.mp3</span>&lt;/music_file&gt;<br />
+  <br />
+  <span class="Style3">&lt;!-- change to &lt;play_transition_sound_file&gt;<span class="Style1">no</span>&lt;/play_transition_sound_file&gt; --&gt; </span><br />
+&lt;play_transition_sound_file&gt;<span class="Style1">yes</span>&lt;/play_transition_sound_file&gt;<br />
+  <br />
+  <span class="Style3">&lt;!-- change to &lt;display_preload graphic_color=&quot;<span class="Style1">669ac6</span>&quot;&gt;<span class="Style1">no</span>&lt;/display_preload&gt; if you don't want to show the flash header prealoder--&gt; </span><br />
+&lt;display_preload graphic_color=&quot;<span class="Style1">669ac6</span>&quot;&gt;yes&lt;/display_preload&gt;<br />
+  <br />
+  <br />
+&lt;replay display=&quot;<span class="Style1">yes</span>&quot; x_pos=&quot;<span class="Style1">493</span>&quot; y_pos=&quot;<span class="Style1">135</span>&quot; size=&quot;<span class="Style1">8</span>&quot; letter_spacing=&quot;<span class="Style1">1</span>&quot; bgd_color=&quot;<span class="Style1">FFFFFF</span>&quot; text_color=&quot;<span class="Style1">000000</span>&quot;&gt; REPLAY&lt;/replay&gt;<br />
+&lt;/header_vars&gt;</p>
+<p>&nbsp;</p>
+</body>
+</html>

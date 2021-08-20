@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+
+
+  
+  
+  <title>How to customize this template</title>
+  <style type="text/css">
+<!--
+body {font-family: Verdana, Arial, Helvetica, sans-serif;font-size:11px}
+.Style1 {color: #FF0000}
+.Style3 {color: #339966}
+.Style5 {color: #FF0000; font-weight: bold; }
+.Style6 {color: #000000}
+-->
+  </style>
+</head>
+
+
+<body>
+
+
+<p><u> How to customize dynamic flash intro ? </u><br />
+<br />
+
+
+Open and edit custom.xml file with notepad. Replace red values by yours.&nbsp;Becarfull to <span class="Style5">not </span>add "#" before colors. 
+</p>
+
+<p></p>
+
+<p>&lt;?xml version='1.0' encoding='UTF-8'?&gt;<br />
+
+&lt;configuration&gt;<br />
+
+&nbsp;&nbsp;&nbsp;<span class="Style3"> &lt;!-- Change&nbsp; display="no" if you don't want to have a loading in the intro&nbsp; --&gt;</span><br />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : graphic_color : set color text and animation for loading --&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : loop : set the adjustment to replay the introduction in loop --&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : play : set the "play" at the beginning of the animation --&gt;</span><br />
+
+&nbsp;&nbsp;&nbsp; &lt;display_preload graphic_color="<span class="Style1">E0007A</span>" loop="<span class="Style1">yes</span>" play="<span class="Style1">no</span>"&gt;<span style="font-weight: normal;" class="Style1 Style5">Loading&hellip;</span>&lt;/display_preload&gt;<br />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Change&nbsp; display="no" if you don't want to have a "Skip Intro" Button --&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : display : set the adjustment for the "Skip Intro" button&nbsp;--&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : graphic_color : set color text for the "Skip Intro" button --&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : link : Link adress after clicking on the "Skip Intro" button --&gt;</span><br />
+
+&nbsp;&nbsp;&nbsp; &lt;skip_intro display="<span class="Style1">yes</span>" graphic_color="<span class="Style1">F9CCE4</span>" link="<span style="font-weight: normal;" class="Style3 Style5">http://www.mywebsite.com</span>"&gt;<span style="font-weight: normal;" class="Style5">Skipp introduction</span>&lt;/skip_intro&gt;<br />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Change&nbsp; play="no" if you don't want to play music in the animation&nbsp; --&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : loop : set the adjustment to replay the loop of sound&nbsp;--&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : graphic_color : set color animation for sound button --&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : music_control : set the adjustment to show or not the sound button --&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : play_music : play the music or not&nbsp; --&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : file : Link adress for the sound file / adresse du fichier son &agrave; charger --&gt;</span><br />
+
+&nbsp;&nbsp;&nbsp; &lt;music_file loop="<span style="font-weight: normal;" class="Style5 Style1">yes</span>" graphic_color="<span class="Style1">E31A87</span>" music_control="<span class="Style1">yes</span>" play_music="<span class="Style1">yes</span>" file="<span class="Style1">sound/son.mp3</span>"&gt;<span class="Style1 Style6">sound_text</span>&lt;/music_file&gt;<br />
+
+&nbsp;&nbsp;&nbsp; <span class="Style3">&lt;!-- link for the video file&nbsp; --&gt;</span><br />
+
+&nbsp;&nbsp;&nbsp;<span class="Style3"> &lt;!-- Parameters : file : Link adress for the video file --&gt;</span><br />
+
+&nbsp;&nbsp;&nbsp; &lt;video_file file=""&gt;video_text&lt;/video_file&gt;<br />
+
+&nbsp;&nbsp;&nbsp; <span class="Style3">&lt;!-- header animation&nbsp; text --&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : color : set color for the animated text&nbsp;--&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Parameters : font_size : Size of the Text in px --&gt;</span><br class="Style3" />
+
+<span class="Style3">&nbsp;&nbsp;&nbsp; &lt;!-- Animation Part 1 --&gt;</span><br />
+
+&nbsp;&nbsp;&nbsp; &lt;header_text color="<span class="Style1">F399CA</span>" font_size="<span class="Style1">12</span>"&gt;&lt;![CDATA[<span class="Style1">BEAUTY and WELLNESS</span>]]&gt;&lt;/header_text&gt;<br />
+
+&nbsp;&nbsp;&nbsp; <span class="Style3">&lt;!-- Animation Part 2 --&gt;</span><br />
+
+&nbsp;&nbsp;&nbsp; &lt;header_text color="<span class="Style1">F9CCE4</span>" font_size="<span class="Style1">12</span>"&gt;&lt;![CDATA[<span class="Style1">MAKE-UP TOTO</span>]]&gt;&lt;/header_text&gt;<br />
+
+&nbsp;&nbsp;&nbsp; &lt;header_text color="<span class="Style1">E31A87</span>" font_size="<span class="Style1">12</span>"&gt;&lt;![CDATA[<span class="Style1">MAKE-UP TITI</span>]]&gt;&lt;/header_text&gt;<br />
+
+&nbsp;&nbsp;&nbsp; <span class="Style3">&lt;!-- Animation Part 3 --&gt;</span><br />
+
+&nbsp;&nbsp;&nbsp; &lt;header_text color="<span class="Style1">FFFFFF</span>" font_size="<span class="Style1">12</span>"&gt;&lt;![CDATA[<span class="Style1">PERFUMERY</span>]]&gt;&lt;/header_text&gt;<br />
+
+&nbsp;&nbsp;&nbsp; &lt;!-- Animation Part 4 --&gt;<br />
+
+&nbsp;&nbsp;&nbsp; &lt;header_text color="<span class="Style1">F9CCE4</span>" font_size="<span class="Style1">12</span>"&gt;&lt;![CDATA[<span class="Style1">LUXURY</span>]]&gt;&lt;/header_text&gt;<br />
+
+&nbsp;&nbsp;&nbsp; &lt;header_text color="<span class="Style1">E31A87</span>" font_size="<span class="Style1">12</span>"&gt;&lt;![CDATA[<span class="Style1">PLEASURE</span>]]&gt;&lt;/header_text&gt;<br />
+
+&lt;/configuration&gt;</p>
+
+<p>&nbsp;</p>
+
+
+</body>
+</html>

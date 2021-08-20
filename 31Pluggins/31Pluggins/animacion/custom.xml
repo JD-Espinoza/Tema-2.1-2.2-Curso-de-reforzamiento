@@ -1,0 +1,37 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<configuration>
+    <!-- Change  display="no" if you don't want to have a loading in the intro  -->
+	<!-- Parameters : graphic_color : set color text and animation for loading / permet de régler la couleur de l'animation et du texte associé pour le loading -->
+	<!-- Parameters : loop : set the adjustment to replay the introduction in loop / permet de rejouer l'animation d'introduction en boucle à la fin de l'animation -->
+	<!-- Parameters : play : set the "play" at the beginning of the animation / permet d'afficher l'écran "Play" au début de l'animation -->
+	<display_preload graphic_color="E0007A" loop="yes" play="no">Loading…</display_preload>
+	<!-- Change  display="no" if you don't want to have a "Skip Intro" Button  -->
+	<!-- Parameters : display : set the adjustment for the "Skip Intro" button / permet d'afficher ou non le bouton skip intro -->
+	<!-- Parameters : graphic_color : set color text for the "Skip Intro" button / permet de régler la couleur du texte associé au bouton "Skip Intro" -->
+	<!-- Parameters : link : Link adress after clicking on the "Skip Intro" button / adresse du lien au clic sur le bouton "Skip Intro"-->
+	<!-- If the link is an absolute URL (beginning byt http//) it will only work when intro will be online / Si l'adresse du lien est en absolue (commençant par http//) il fonctionnera uniquement lorsque l'intro sera en ligne -->
+	<skip_intro display="yes" graphic_color="F9CCE4" link="http://www.google.com">Skip introduction</skip_intro>
+    <!-- Change  play="no" if you don't want to play music in the animation  -->
+	<!-- Parameters : loop : set the adjustment to replay the loop of sound / permet de jouer la bande son en boucle -->
+	<!-- Parameters : graphic_color : set color animation for sound button / permet de la couleur de l'animation associé au bouton "son" -->
+	<!-- Parameters : music_control : set the adjustment to show or not the sound button / permet d'afficher ou non le bouton pour couper le son -->
+	<!-- Parameters : play_music : play the music or not / permet de jouer ou non le son -->
+	<!-- Parameters : file : Link adress for the sound file / adresse du fichier son à charger -->
+	<music_file loop="yes" graphic_color="E31A87" music_control="yes" play_music="yes" file="sound/son.mp3">sound_text</music_file>
+	<!-- link for the video file  -->
+	<!-- Parameters : file : Link adress for the video file / adresse du fichier video à charger -->
+	<video_file file="">video_text</video_file>
+	<!-- header animation  text -->
+	<!-- Parameters : color : set color for the animated text / permet de régler la couleur du texte animé -->
+	<!-- Parameters : font_size : Size of the Text in px / Taille du texte en pixel -->
+	<!-- Animation Part 1 -->
+	<header_text color="F399CA" font_size="12"><![CDATA[BEAUTY and WELLNESS]]></header_text>
+	<!-- Animation Part 2 -->
+	<header_text color="F9CCE4" font_size="12"><![CDATA[MAKE-UP]]></header_text>
+	<header_text color="E31A87" font_size="12"><![CDATA[MAKE-UP]]></header_text>
+	<!-- Animation Part 3 -->
+	<header_text color="FFFFFF" font_size="12"><![CDATA[PERFUMERY]]></header_text>
+	<!-- Animation Part 4 -->
+	<header_text color="F9CCE4" font_size="12"><![CDATA[LUXURY]]></header_text>
+	<header_text color="E31A87" font_size="12"><![CDATA[PLEASURE]]></header_text>
+</configuration>
